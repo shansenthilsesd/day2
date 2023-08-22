@@ -1,0 +1,99 @@
+Student@SOC-CSELAB2-34 MINGW64 ~ (version1)
+$ mkdir Exercises
+
+Student@SOC-CSELAB2-34 MINGW64 ~ (version1)
+$ cd Exercises
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (version1)
+$ git init
+Initialized empty Git repository in C:/Users/Student/Exercises/.git/
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (master)
+$ git branch
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (master)
+$ git branch -m main
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ touch exercise.txt
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git add exercise1.txt
+fatal: pathspec 'exercise1.txt' did not match any files
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git add exercise.txt
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 582c3cd] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 exercise.txt
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ code exercise.txt
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git add exercise.txt
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git commit -m "Added 'Hello World!' to exercise.txt"
+bash: !': event not found
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$  git commit -m "Added Hello World! to exercise.txt"
+[main 71d6e8f] Added Hello World! to exercise.txt
+ 1 file changed, 1 insertion(+)
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git log
+commit 71d6e8f2e7cd2e007d5e5c36ca56df2617441db1 (HEAD -> main)
+Author: esdhanush <esdhanush@gmail.com>
+Date:   Tue Aug 22 07:02:50 2023 +0530
+
+    Added Hello World! to exercise.txt
+
+commit 582c3cd30eefc535cd745f05efb515041cfb837a
+Author: esdhanush <esdhanush@gmail.com>
+Date:   Tue Aug 22 07:01:21 2023 +0530
+
+    Initial commit
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git remote add origin https://github.com/shansenthilsesd/day2.git
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git branch -M main
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git push -u origin main
+remote: Permission to shansenthilsesd/day2.git denied to esdhanush.
+fatal: unable to access 'https://github.com/shansenthilsesd/day2.git/': The requ
+ested URL returned error: 403
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+remote: Permission to shansenthilsesd/day2.git denied to esdhanush.
+fatal: unable to access 'https://github.com/shansenthilsesd/day2.git/': The requested URL returned error: 403
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+remote: Permission to shansenthilsesd/day2.git denied to esdhanush.
+fatal: unable to access 'https://github.com/shansenthilsesd/day2.git/': The requested URL returned error: 403
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 452 bytes | 452.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shansenthilsesd/day2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Student@SOC-CSELAB2-34 MINGW64 ~/Exercises (main)
+$
